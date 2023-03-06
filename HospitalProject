@@ -1,0 +1,20 @@
+CREATE TABLE Supplies(
+ItemNo    numeric PRIMARY KEY,
+qty  varchar(20)  NOT NULL,
+name varchar(20) NOT NULL,
+cost varchar(20) NOT NULL
+);
+
+CREATE TABLE Payment(
+Date    numeric PRIMARY KEY,
+amount  varchar(20)  NOT NULL
+);
+
+INSERT INTO Patient(Id, Phone, Name, DOB, SSN)
+VALUES (1, '8324592236', 'Kyle','7/17/2003','1234'),
+(2, '1234567890', 'Tyler', '1/23/2002', '2345'),
+(3, '0987654321', 'Arden', '3/21/2002', '3456'),
+(4, '1234509876', 'Chase', '2/13/2002', '4567'),
+(5, '6789054321', 'Wu', '2/12/2002', '5678');
+
+DROP SCHEMA Hospital; 
